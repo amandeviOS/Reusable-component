@@ -8,20 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		7AA268152119764C00972AF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA268142119764C00972AF4 /* AppDelegate.swift */; };
-		7AA268172119764C00972AF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA268162119764C00972AF4 /* ViewController.swift */; };
+		7AA268172119764C00972AF4 /* LocalizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA268162119764C00972AF4 /* LocalizationVC.swift */; };
 		7AA2681A2119764C00972AF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA268182119764C00972AF4 /* Main.storyboard */; };
 		7AA2681C2119764E00972AF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2681B2119764E00972AF4 /* Assets.xcassets */; };
 		7AA2681F2119764E00972AF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA2681D2119764E00972AF4 /* LaunchScreen.storyboard */; };
+		7AA2682721197CB300972AF4 /* LocalizeTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2682621197CB300972AF4 /* LocalizeTblCell.swift */; };
+		7AA2685121197DD100972AF4 /* LanguageFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2684721197DD100972AF4 /* LanguageFile.swift */; };
+		7AA2686021197EBB00972AF4 /* BundleLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2685E21197EBB00972AF4 /* BundleLocalization.m */; };
+		7AA2686121197EBB00972AF4 /* NSBundle+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2685F21197EBB00972AF4 /* NSBundle+Localization.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7AA268112119764C00972AF4 /* AppLocalization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppLocalization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA268142119764C00972AF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7AA268162119764C00972AF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7AA268162119764C00972AF4 /* LocalizationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationVC.swift; sourceTree = "<group>"; };
 		7AA268192119764C00972AF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AA2681B2119764E00972AF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AA2681E2119764E00972AF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AA268202119764E00972AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AA2682621197CB300972AF4 /* LocalizeTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizeTblCell.swift; sourceTree = "<group>"; };
+		7AA2684721197DD100972AF4 /* LanguageFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageFile.swift; sourceTree = "<group>"; };
+		7AA2685721197E6D00972AF4 /* AppLocalization-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppLocalization-Bridging-Header.h"; sourceTree = "<group>"; };
+		7AA2685C21197EBB00972AF4 /* BundleLocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleLocalization.h; sourceTree = "<group>"; };
+		7AA2685D21197EBB00972AF4 /* NSBundle+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Localization.h"; sourceTree = "<group>"; };
+		7AA2685E21197EBB00972AF4 /* BundleLocalization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BundleLocalization.m; sourceTree = "<group>"; };
+		7AA2685F21197EBB00972AF4 /* NSBundle+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Localization.m"; sourceTree = "<group>"; };
+		7AA2686B2119BC1C00972AF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		7AA2686D2119BC2000972AF4 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +67,45 @@
 		7AA268132119764C00972AF4 /* AppLocalization */ = {
 			isa = PBXGroup;
 			children = (
+				7AA2682821197DD100972AF4 /* Localization */,
 				7AA268142119764C00972AF4 /* AppDelegate.swift */,
-				7AA268162119764C00972AF4 /* ViewController.swift */,
+				7AA268162119764C00972AF4 /* LocalizationVC.swift */,
+				7AA2682621197CB300972AF4 /* LocalizeTblCell.swift */,
+				7AA2685721197E6D00972AF4 /* AppLocalization-Bridging-Header.h */,
 				7AA268182119764C00972AF4 /* Main.storyboard */,
-				7AA2681B2119764E00972AF4 /* Assets.xcassets */,
 				7AA2681D2119764E00972AF4 /* LaunchScreen.storyboard */,
+				7AA2681B2119764E00972AF4 /* Assets.xcassets */,
 				7AA268202119764E00972AF4 /* Info.plist */,
 			);
 			path = AppLocalization;
+			sourceTree = "<group>";
+		};
+		7AA2682821197DD100972AF4 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				7AA2685B21197EBB00972AF4 /* BundleLocalization */,
+				7AA2684621197DD100972AF4 /* LanguageFIle */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		7AA2684621197DD100972AF4 /* LanguageFIle */ = {
+			isa = PBXGroup;
+			children = (
+				7AA2684721197DD100972AF4 /* LanguageFile.swift */,
+			);
+			path = LanguageFIle;
+			sourceTree = "<group>";
+		};
+		7AA2685B21197EBB00972AF4 /* BundleLocalization */ = {
+			isa = PBXGroup;
+			children = (
+				7AA2685C21197EBB00972AF4 /* BundleLocalization.h */,
+				7AA2685D21197EBB00972AF4 /* NSBundle+Localization.h */,
+				7AA2685E21197EBB00972AF4 /* BundleLocalization.m */,
+				7AA2685F21197EBB00972AF4 /* NSBundle+Localization.m */,
+			);
+			path = BundleLocalization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +140,7 @@
 				TargetAttributes = {
 					7AA268102119764C00972AF4 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -106,6 +151,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 7AA268082119764C00972AF4;
 			productRefGroup = 7AA268122119764C00972AF4 /* Products */;
@@ -135,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AA268172119764C00972AF4 /* ViewController.swift in Sources */,
+				7AA268172119764C00972AF4 /* LocalizationVC.swift in Sources */,
+				7AA2686121197EBB00972AF4 /* NSBundle+Localization.m in Sources */,
+				7AA2682721197CB300972AF4 /* LocalizeTblCell.swift in Sources */,
 				7AA268152119764C00972AF4 /* AppDelegate.swift in Sources */,
+				7AA2686021197EBB00972AF4 /* BundleLocalization.m in Sources */,
+				7AA2685121197DD100972AF4 /* LanguageFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +197,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				7AA268192119764C00972AF4 /* Base */,
+				7AA2686B2119BC1C00972AF4 /* en */,
+				7AA2686D2119BC2000972AF4 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -280,7 +332,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W4397NF5RZ;
 				INFOPLIST_FILE = AppLocalization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,6 +342,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Spa.AppLocalization;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppLocalization/Localization/AppLocalization-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,7 +353,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W4397NF5RZ;
 				INFOPLIST_FILE = AppLocalization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +363,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Spa.AppLocalization;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppLocalization/Localization/AppLocalization-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

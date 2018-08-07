@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "This is Label"; ObjectID = "4sx-ef-hVs"; */
+"4sx-ef-hVs.text" = "This is Label";
+
+/* Class = "UILabel"; text = "Localization"; ObjectID = "FLl-Iu-hIJ"; */
+"FLl-Iu-hIJ.text" = "Localization";
+
+/* Class = "UITextField"; placeholder = "Placeholder"; ObjectID = "RyV-Jo-tO3"; */
+"RyV-Jo-tO3.placeholder" = "Placeholder";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "gTN-Tu-fcj"; */
+"gTN-Tu-fcj.normalTitle" = "Done";
+
+/* Class = "UIButton"; normalTitle = "This is Button"; ObjectID = "uD1-pX-jK1"; */
+"uD1-pX-jK1.normalTitle" = "This is Button";
+
+/* Class = "UIButton"; normalTitle = "Arabic"; ObjectID = "xzU-ah-Egl"; */
+"xzU-ah-Egl.normalTitle" = "Arabic";
+
+/* Class = "UIButton"; normalTitle = "English"; ObjectID = "yxK-CD-gpN"; */
+"yxK-CD-gpN.normalTitle" = "English";
