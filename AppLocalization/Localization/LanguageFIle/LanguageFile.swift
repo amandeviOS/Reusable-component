@@ -1,9 +1,9 @@
 //
-//  LanguageFile.swift
-//  Wade7Student
+//  AppDelegate.swift
+//  AppLocalization
 //
-//  Created by OSX on 22/12/17.
-//  Copyright © 2017 OSX. All rights reserved.
+//  Created by AmanDev on 07/08/18.
+//  Copyright © 2018 AmanDev. All rights reserved.
 //
 
 import UIKit
