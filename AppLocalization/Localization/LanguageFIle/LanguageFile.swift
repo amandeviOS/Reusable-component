@@ -21,14 +21,8 @@ class LanguageFile: NSObject {
   
     //change app laguage
     func changeLanguage(){
-        
-        if BundleLocalization.sharedInstance().language == Languages.English {
-            UIView.appearance().semanticContentAttribute = .forceRightToLeft
-            
-        }
-        else{
-            UIView.appearance().semanticContentAttribute = .forceLeftToRight
-        }
+
+        UIView.appearance().semanticContentAttribute =  BundleLocalization.sharedInstance().language == Languages.English ? .forceRightToLeft : .forceLeftToRight
         self.initializeStoryboard()
     }
     
@@ -77,12 +71,7 @@ extension UIView{
     }
     
     func setTexts() -> NSTextAlignment{
-        if BundleLocalization.sharedInstance().language == Languages.Arabic{
-            return .right
-        }
-        else {
-            return .left
-        }
+        return  BundleLocalization.sharedInstance().language == Languages.Arabic ? .right : .left
     }
 }
 
@@ -90,21 +79,16 @@ extension UIView{
 extension UIButton{
     func setAlignment() {
         if(self.contentHorizontalAlignment != .center){
-        if BundleLocalization.sharedInstance().language == Languages.Arabic{
-            self.contentHorizontalAlignment = .right
-        }else {
-            self.contentHorizontalAlignment = .left
-        }}}
+            self.contentHorizontalAlignment = BundleLocalization.sharedInstance().language == Languages.Arabic ? .right : .left
+        }
+    }
 }
 
 //UILabel localize
 extension UILabel{
     func setLabelAlignment() {
         if(self.textAlignment != .center){
-        if BundleLocalization.sharedInstance().language == Languages.Arabic{
-            self.textAlignment = .right
-        }else {
-            self.textAlignment = .left
-        }}}
+            self.textAlignment = BundleLocalization.sharedInstance().language == Languages.Arabic ? .right : .left
+    }}
 }
 
